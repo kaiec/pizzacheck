@@ -2,19 +2,20 @@
 
 [ext_resource path="res://assets/images/plate.png" type="Texture" id=1]
 [ext_resource path="res://Plate.gd" type="Script" id=2]
-[ext_resource path="res://assets/images/tomato.png" type="Texture" id=3]
-[ext_resource path="res://assets/images/peperoni.png" type="Texture" id=4]
-[ext_resource path="res://assets/images/olives.png" type="Texture" id=5]
-[ext_resource path="res://assets/images/oregano.png" type="Texture" id=6]
-[ext_resource path="res://assets/images/broccoli.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/champignon.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/tomato.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/oregano.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/olives.png" type="Texture" id=6]
+[ext_resource path="res://assets/images/peperoni.png" type="Texture" id=7]
 [ext_resource path="res://assets/images/mozarella.png" type="Texture" id=8]
-[ext_resource path="res://assets/images/corn.png" type="Texture" id=9]
-[ext_resource path="res://assets/images/champignon.png" type="Texture" id=10]
+[ext_resource path="res://assets/images/broccoli.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/corn.png" type="Texture" id=10]
 
 [node name="plate" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="plate" type="Sprite" parent="."]
+scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
@@ -23,22 +24,22 @@ __meta__ = {
 [node name="positions" type="Node2D" parent="."]
 
 [node name="pos1" type="Node2D" parent="positions"]
-position = Vector2( -2.82843, -192.333 )
+position = Vector2( -2.82843, -139.577 )
 
 [node name="pos2" type="Node2D" parent="positions"]
-position = Vector2( 125.865, -106.066 )
+position = Vector2( 107.906, -76.882 )
 
 [node name="pos3" type="Node2D" parent="positions"]
-position = Vector2( 135.764, 86.267 )
+position = Vector2( 104.335, 76.1649 )
 
 [node name="pos4" type="Node2D" parent="positions"]
-position = Vector2( -2.82843, 179.605 )
+position = Vector2( -1.70599, 130.217 )
 
 [node name="pos5" type="Node2D" parent="positions"]
-position = Vector2( -130.108, 86.267 )
+position = Vector2( -95.3117, 68.3076 )
 
 [node name="pos6" type="Node2D" parent="positions"]
-position = Vector2( -147.078, -106.066 )
+position = Vector2( -99.9346, -83.6168 )
 
 [node name="pos7" type="Node2D" parent="positions"]
 position = Vector2( -4.24261, 2.82837 )
@@ -47,15 +48,15 @@ position = Vector2( -4.24261, 2.82837 )
 
 [node name="broccoli" type="Sprite" parent="vegetables"]
 position = Vector2( -304.897, 1717.64 )
-texture = ExtResource( 7 )
+texture = ExtResource( 9 )
 
 [node name="champignon" type="Sprite" parent="vegetables"]
 position = Vector2( 119.831, 1731.91 )
-texture = ExtResource( 10 )
+texture = ExtResource( 3 )
 
 [node name="corn" type="Sprite" parent="vegetables"]
-position = Vector2( -344.194, 1228.44 )
-texture = ExtResource( 9 )
+position = Vector2( -348.194, 1228.44 )
+texture = ExtResource( 10 )
 
 [node name="mozarella" type="Sprite" parent="vegetables"]
 position = Vector2( 527.762, 1222.57 )
@@ -63,16 +64,16 @@ texture = ExtResource( 8 )
 
 [node name="olives" type="Sprite" parent="vegetables"]
 position = Vector2( 508.43, 1622.43 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="oregano" type="Sprite" parent="vegetables"]
 position = Vector2( 81.3888, 1235.03 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 
 [node name="peperoni" type="Sprite" parent="vegetables"]
 position = Vector2( 1168.35, 1160.48 )
-texture = ExtResource( 4 )
+texture = ExtResource( 7 )
 
 [node name="tomato" type="Sprite" parent="vegetables"]
 position = Vector2( 956.383, 1620.71 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
