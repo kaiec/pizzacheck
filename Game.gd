@@ -8,7 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -20,3 +20,22 @@ func _input(event):
 		$plate.shuffle()
 
 
+
+
+func _on_music_button_toggled(button_pressed):
+	if button_pressed:
+		$AudioStreamPlayer.play()
+	else:
+		$AudioStreamPlayer.stop()
+
+
+func _on_settings_pressed():
+	$settings_dialog.show()
+
+
+func _on_close_settings_pressed():
+	$settings_dialog.hide()
+
+
+func _on_volume_value_changed(value):
+	$AudioStreamPlayer.volume_db = value

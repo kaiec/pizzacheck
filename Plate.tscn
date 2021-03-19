@@ -15,7 +15,6 @@
 script = ExtResource( 2 )
 
 [node name="plate" type="Sprite" parent="."]
-scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
