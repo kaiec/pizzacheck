@@ -16,4 +16,10 @@ func _ready():
 #	pass
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
+		print("Shuffle")
 		$plate.shuffle()
+
+
+func _on_Button1_pressed():
+	print("Hi")
+	print($GridContainer/Button1/icon.texture.resource_name)
