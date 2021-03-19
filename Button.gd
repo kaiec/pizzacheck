@@ -25,3 +25,7 @@ func set_icon_texture(v):
 	$icon.texture = icon_texture
 	$icon.scale = $icon_size.get_rect().size / self.icon_texture.get_size()
 
+
+
+func _on_Button_pressed():
+	$AnimationPlayer.play("pressed")
