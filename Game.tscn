@@ -16,8 +16,11 @@
 script = ExtResource( 10 )
 
 [node name="background" type="Sprite" parent="."]
-position = Vector2( 761.613, 208.721 )
+position = Vector2( 662.162, 294.441 )
 texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="plate" parent="." instance=ExtResource( 9 )]
 position = Vector2( 668.138, 354.216 )
