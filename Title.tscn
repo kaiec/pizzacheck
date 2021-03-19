@@ -1,0 +1,84 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://assets/images/background.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/oregano.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/tomato.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/broccoli.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/mozarella.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/olives.png" type="Texture" id=6]
+[ext_resource path="res://shadow_material.tres" type="Material" id=7]
+[ext_resource path="res://assets/images/peperoni.png" type="Texture" id=8]
+[ext_resource path="res://assets/images/champignon.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/corn.png" type="Texture" id=10]
+[ext_resource path="res://assets/images/title.png" type="Texture" id=11]
+[ext_resource path="res://assets/images/gwj.png" type="Texture" id=12]
+[ext_resource path="res://assets/images/theme.png" type="Texture" id=13]
+[ext_resource path="res://assets/images/wildcards.png" type="Texture" id=14]
+
+[node name="title" type="Node2D"]
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 619.149, 296.45 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="title" type="Sprite" parent="."]
+position = Vector2( 648.154, 211.922 )
+texture = ExtResource( 11 )
+
+[node name="broccoli" type="Sprite" parent="."]
+material = ExtResource( 7 )
+position = Vector2( 78.4711, 238.82 )
+texture = ExtResource( 4 )
+
+[node name="champignon" type="Sprite" parent="."]
+material = ExtResource( 7 )
+position = Vector2( 299.432, 103.129 )
+texture = ExtResource( 9 )
+
+[node name="corn" type="Sprite" parent="."]
+material = ExtResource( 7 )
+position = Vector2( 1225.1, 104.833 )
+texture = ExtResource( 10 )
+
+[node name="mozarella" type="Sprite" parent="."]
+material = ExtResource( 7 )
+position = Vector2( 110.11, 66.045 )
+texture = ExtResource( 5 )
+
+[node name="olives" type="Sprite" parent="."]
+material = ExtResource( 7 )
+position = Vector2( 1191.94, 328.05 )
+texture = ExtResource( 6 )
+
+[node name="oregano" type="Sprite" parent="."]
+material = ExtResource( 7 )
+position = Vector2( 1083.01, 103.842 )
+texture = ExtResource( 2 )
+
+[node name="peperoni" type="Sprite" parent="."]
+material = ExtResource( 7 )
+position = Vector2( 186.722, 178.157 )
+texture = ExtResource( 8 )
+
+[node name="tomato" type="Sprite" parent="."]
+material = ExtResource( 7 )
+position = Vector2( 1173.24, 228.323 )
+texture = ExtResource( 3 )
+
+[node name="gwj" type="Sprite" parent="."]
+position = Vector2( 1207.16, 662.418 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 12 )
+
+[node name="wildcards" type="Sprite" parent="."]
+position = Vector2( 1099.16, 662.418 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 14 )
+
+[node name="theme" type="Sprite" parent="."]
+position = Vector2( 1166.1, 579.236 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 13 )
