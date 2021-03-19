@@ -109,6 +109,7 @@ texture_pressed = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="chosen" from="Controller" to="." method="_on_Controller_chosen"]
 [connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="settings_dialog/ColorRect/close_settings" to="." method="_on_close_settings_pressed"]
 [connection signal="value_changed" from="settings_dialog/ColorRect/Node2D/volume" to="." method="_on_volume_value_changed"]
