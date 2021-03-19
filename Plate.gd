@@ -19,7 +19,7 @@ func shuffle():
 			continue
 		v.position = $positions.get_child(posnos.pop_back()).position
 		var scale = rand_range(0.7, 1.25)
-		v.scale = Vector2(scale, scale)
+		#v.scale = Vector2(scale, scale)
 		#v.set_material(outline_material)
 		v.show()
 
@@ -29,7 +29,3 @@ func _ready():
 	$vegetables.show()
 	shuffle()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
