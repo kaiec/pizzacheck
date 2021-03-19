@@ -23,6 +23,8 @@ func shuffle():
 		#v.set_material(outline_material)
 		v.show()
 
+func next():
+	$AnimationPlayer.play("shuffle")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

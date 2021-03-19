@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/images/plate.png" type="Texture" id=1]
 [ext_resource path="res://Plate.gd" type="Script" id=2]
@@ -10,6 +10,35 @@
 [ext_resource path="res://assets/images/mozarella.png" type="Texture" id=8]
 [ext_resource path="res://assets/images/broccoli.png" type="Texture" id=9]
 [ext_resource path="res://assets/images/corn.png" type="Texture" id=10]
+
+[sub_resource type="Animation" id=1]
+resource_name = "shuffle"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "shuffle"
+} ]
+}
 
 [node name="plate" type="Node2D"]
 script = ExtResource( 2 )
@@ -77,3 +106,6 @@ texture = ExtResource( 7 )
 [node name="tomato" type="Sprite" parent="vegetables"]
 position = Vector2( 960.873, 834.986 )
 texture = ExtResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/shuffle = SubResource( 1 )

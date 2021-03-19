@@ -17,7 +17,7 @@ func _ready():
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		print("Shuffle")
-		$plate.shuffle()
+		$plate.next()
 
 
 
