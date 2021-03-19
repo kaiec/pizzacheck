@@ -20,6 +20,3 @@ func _input(event):
 		$plate.shuffle()
 
 
-func _on_Button1_pressed():
-	print("Hi")
-	print($GridContainer/Button1/icon.texture.resource_name)

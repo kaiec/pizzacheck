@@ -6,8 +6,10 @@
 [ext_resource path="res://button_key_font.tres" type="DynamicFont" id=4]
 
 [node name="Button" type="TextureButton"]
-margin_right = 150.0
-margin_bottom = 199.0
+margin_left = 0.353561
+margin_top = 0.707108
+margin_right = 75.3536
+margin_bottom = 100.707
 texture_normal = ExtResource( 1 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -19,10 +21,10 @@ position = Vector2( 37.686, 41.9449 )
 texture = ExtResource( 3 )
 
 [node name="icon_size" type="ColorRect" parent="."]
-margin_left = 6.81799
-margin_top = 7.89183
-margin_right = 68.818
-margin_bottom = 68.8918
+margin_left = 6.11086
+margin_top = 130.928
+margin_right = 68.1109
+margin_bottom = 191.928
 color = Color( 1, 1, 1, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -39,3 +41,4 @@ text = "A"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="." to="." method="_on_Button_pressed"]

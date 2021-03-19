@@ -25,9 +25,3 @@ func set_icon_texture(v):
 	$icon.texture = icon_texture
 	$icon.scale = $icon_size.get_rect().size / self.icon_texture.get_size()
 
-# Called when the node enters the scene tree for the first time.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

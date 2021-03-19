@@ -26,17 +26,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.3845679"
+     inkscape:zoom="0.24718359"
      inkscape:cx="137.17753"
      inkscape:cy="-38.798479"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1271"
-     inkscape:window-height="2118"
-     inkscape:window-x="4481"
-     inkscape:window-y="34"
+     inkscape:window-width="1911"
+     inkscape:window-height="700"
+     inkscape:window-x="3841"
+     inkscape:window-y="1452"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -63,7 +63,8 @@
        x="70.152214"
        y="159.04587"
        ry="5.7977557"
-       inkscape:export-xdpi="33.810001"
-       inkscape:export-ydpi="33.810001" />
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="./button.png" />
   </g>
 </svg>

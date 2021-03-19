@@ -45,6 +45,7 @@ position = Vector2( -99.9346, -83.6168 )
 position = Vector2( -4.24261, 2.82837 )
 
 [node name="vegetables" type="Node2D" parent="."]
+visible = false
 
 [node name="broccoli" type="Sprite" parent="vegetables"]
 position = Vector2( 283.096, 983.54 )
