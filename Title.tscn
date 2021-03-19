@@ -30,27 +30,27 @@ texture = ExtResource( 11 )
 
 [node name="broccoli" type="Sprite" parent="."]
 material = ExtResource( 7 )
-position = Vector2( 78.4711, 238.82 )
+position = Vector2( 119.452, 260.922 )
 texture = ExtResource( 4 )
 
 [node name="champignon" type="Sprite" parent="."]
 material = ExtResource( 7 )
-position = Vector2( 299.432, 103.129 )
+position = Vector2( 105.216, 612.418 )
 texture = ExtResource( 9 )
 
 [node name="corn" type="Sprite" parent="."]
 material = ExtResource( 7 )
-position = Vector2( 1225.1, 104.833 )
+position = Vector2( 1200.15, 174.82 )
 texture = ExtResource( 10 )
 
 [node name="mozarella" type="Sprite" parent="."]
 material = ExtResource( 7 )
-position = Vector2( 110.11, 66.045 )
+position = Vector2( 202.154, 80.2994 )
 texture = ExtResource( 5 )
 
 [node name="olives" type="Sprite" parent="."]
 material = ExtResource( 7 )
-position = Vector2( 1191.94, 328.05 )
+position = Vector2( 1207.43, 449.212 )
 texture = ExtResource( 6 )
 
 [node name="oregano" type="Sprite" parent="."]
@@ -60,12 +60,12 @@ texture = ExtResource( 2 )
 
 [node name="peperoni" type="Sprite" parent="."]
 material = ExtResource( 7 )
-position = Vector2( 186.722, 178.157 )
+position = Vector2( 169.216, 432.954 )
 texture = ExtResource( 8 )
 
 [node name="tomato" type="Sprite" parent="."]
 material = ExtResource( 7 )
-position = Vector2( 1173.24, 228.323 )
+position = Vector2( 1118, 324.922 )
 texture = ExtResource( 3 )
 
 [node name="gwj" type="Sprite" parent="."]
