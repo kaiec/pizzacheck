@@ -5,7 +5,6 @@ extends Node2D
 # var a = 2
 # var b = "text"
 
-signal timeout
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -16,14 +15,6 @@ func _ready():
 #func _process(delta):
 #	pass
 
-func _process(delta):
-	$Label.text = "%d" % int($Timer.time_left)
 
-func start(v):
-	$Timer.start(v)
-	$Timer.paused = false
-
-
-func _on_Timer_timeout():
-	$Timer.stop()
-	emit_signal("timeout")
+func _on_back_pressed():
+	get_tree().change_scene("res://Title.tscn")

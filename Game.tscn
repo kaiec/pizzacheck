@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/images/background.png" type="Texture" id=1]
 [ext_resource path="res://assets/images/title.png" type="Texture" id=2]
@@ -15,6 +15,9 @@
 [ext_resource path="res://headline_font.tres" type="DynamicFont" id=13]
 [ext_resource path="res://Timer.gd" type="Script" id=14]
 [ext_resource path="res://button_key_font.tres" type="DynamicFont" id=15]
+[ext_resource path="res://assets/images/button-wide-normal.png" type="Texture" id=16]
+[ext_resource path="res://assets/images/button-wide-hover.png" type="Texture" id=17]
+[ext_resource path="res://text_font.tres" type="DynamicFont" id=18]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 10 )
@@ -201,6 +204,26 @@ text = "Not bad, you saved some Pizzas!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="backButton" type="TextureButton" parent="."]
+margin_left = 536.541
+margin_top = 287.319
+margin_right = 671.541
+margin_bottom = 327.319
+texture_normal = ExtResource( 16 )
+texture_hover = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="backButton"]
+margin_left = 43.8597
+margin_top = 23.0488
+margin_right = 225.86
+margin_bottom = 51.0488
+custom_fonts/font = ExtResource( 18 )
+custom_colors/font_color = Color( 0.270588, 0.266667, 0.309804, 1 )
+text = "Play again?"
 [connection signal="chosen" from="Controller" to="." method="_on_Controller_chosen"]
 [connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="settings_dialog/ColorRect/close_settings" to="." method="_on_close_settings_pressed"]
@@ -208,3 +231,4 @@ __meta__ = {
 [connection signal="toggled" from="settings_dialog/ColorRect/Node2D/music_button" to="." method="_on_music_button_toggled"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer/Timer" to="Timer" method="_on_Timer_timeout"]
+[connection signal="pressed" from="backButton" to="." method="_on_backButton_pressed"]

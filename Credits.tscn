@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://headline_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://assets/images/background.png" type="Texture" id=2]
@@ -6,8 +6,12 @@
 [ext_resource path="res://assets/images/tomato.png" type="Texture" id=4]
 [ext_resource path="res://assets/images/title.png" type="Texture" id=5]
 [ext_resource path="res://assets/images/oregano.svg" type="Texture" id=6]
+[ext_resource path="res://assets/images/button-wide-normal.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/button-wide-hover.png" type="Texture" id=8]
+[ext_resource path="res://Credits.gd" type="Script" id=9]
 
 [node name="Credits" type="Node2D"]
+script = ExtResource( 9 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -18,9 +22,9 @@ texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 75.5077
-margin_top = 156.363
+margin_top = 122.363
 margin_right = 319.508
-margin_bottom = 215.363
+margin_bottom = 181.363
 custom_fonts/font = ExtResource( 1 )
 text = "Credits"
 __meta__ = {
@@ -29,9 +33,9 @@ __meta__ = {
 
 [node name="Label2" type="Label" parent="."]
 margin_left = 77.5077
-margin_top = 269.616
+margin_top = 235.616
 margin_right = 1127.51
-margin_bottom = 576.616
+margin_bottom = 542.616
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0.270588, 0.266667, 0.309804, 1 )
 text = "Programmer: Kai Eckert (Godot Engine).
@@ -61,3 +65,25 @@ position = Vector2( 1075.49, 109.511 )
 rotation = 0.523598
 scale = Vector2( 0.549263, 0.549263 )
 texture = ExtResource( 5 )
+
+[node name="back" type="TextureButton" parent="."]
+margin_left = 520.729
+margin_top = 599.098
+margin_right = 790.729
+margin_bottom = 668.098
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="back"]
+margin_left = 98.5811
+margin_top = 22.0723
+margin_right = 216.581
+margin_bottom = 81.0723
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.270588, 0.266667, 0.309804, 1 )
+text = "Back
+"
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

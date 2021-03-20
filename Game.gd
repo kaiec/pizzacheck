@@ -21,7 +21,8 @@ func _on_volume_value_changed(value):
 
 func _ready():
 	$FinishedLabel.hide()
-	$Timer.start()
+	$backButton.hide()
+	$Timer.start(10)
 
 func _on_Controller_chosen(item):
 	if item==$plate.missing:
@@ -32,4 +33,9 @@ func _on_Controller_chosen(item):
 func _on_Timer_timeout():
 	$Controller.hide()
 	$FinishedLabel.show()
+	$backButton.show()
 	$plate.hide_anim()
+
+
+func _on_backButton_pressed():
+	get_tree().change_scene("res://Title.tscn")

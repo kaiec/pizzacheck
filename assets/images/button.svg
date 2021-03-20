@@ -26,17 +26,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.9558784"
-     inkscape:cx="73.301429"
-     inkscape:cy="60.32199"
+     inkscape:zoom="2.4779392"
+     inkscape:cx="89.017971"
+     inkscape:cy="70.395069"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1911"
-     inkscape:window-height="1055"
+     inkscape:window-height="701"
      inkscape:window-x="3841"
-     inkscape:window-y="1097"
+     inkscape:window-y="743"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -74,6 +74,28 @@
        x="70.152214"
        y="159.04587"
        ry="5.7977557"
+       inkscape:export-xdpi="94.849037"
+       inkscape:export-ydpi="94.849037"
+       inkscape:export-filename="./button.png" />
+    <rect
+       style="fill:#f2f0e5;fill-opacity:1;stroke:#8ab060;stroke-width:0.965901;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1;stop-color:#000000"
+       id="rect833-3"
+       width="35.208168"
+       height="8.2598572"
+       x="102.9561"
+       y="183.32057"
+       ry="1.8980232"
+       inkscape:export-xdpi="94.849037"
+       inkscape:export-ydpi="94.849037"
+       inkscape:export-filename="./button.png" />
+    <rect
+       style="fill:#f2f0e5;fill-opacity:1;stroke:#c2d368;stroke-width:0.965901;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1;stop-color:#000000"
+       id="rect833-3-6"
+       width="35.208168"
+       height="8.2598572"
+       x="102.3513"
+       y="169.47578"
+       ry="1.8980232"
        inkscape:export-xdpi="94.849037"
        inkscape:export-ydpi="94.849037"
        inkscape:export-filename="./button.png" />
