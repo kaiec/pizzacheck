@@ -1,0 +1,9 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://assets/fonts/Mont-HeavyDEMO.otf" type="DynamicFontData" id=1]
+
+[resource]
+size = 30
+outline_size = 3
+outline_color = Color( 0.34, 0.305093, 0.0782, 1 )
+font_data = ExtResource( 1 )

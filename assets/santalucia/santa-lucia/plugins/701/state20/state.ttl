@@ -1,0 +1,378 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://zynaddsubfx.sourceforge.net> ;
+	state:state [
+		<urn:distrho:state> """
+<?xml version="1.0f" encoding="UTF-8"?>
+<!DOCTYPE ZynAddSubFX-data>
+<ZynAddSubFX-data version-major="3" version-minor="0"
+version-revision="5" ZynAddSubFX-author="Nasca Octavian Paul">
+<INFORMATION />
+<BASE_PARAMETERS>
+<par name="max_midi_parts" value="16" />
+<par name="max_kit_items_per_instrument" value="16" />
+<par name="max_system_effects" value="4" />
+<par name="max_insertion_effects" value="8" />
+<par name="max_instrument_effects" value="3" />
+<par name="max_addsynth_voices" value="8" />
+</BASE_PARAMETERS>
+<MASTER>
+<par_real name="volume" value="-6.66667" exact_value="0xC0D55556" />
+<par name="key_shift" value="64" />
+<par_bool name="nrpn_receive" value="yes" />
+<MICROTONAL>
+<string name="name">12tET</string>
+<string name="comment">Equal Temperament 12 notes per octave</string>
+<par_bool name="invert_up_down" value="no" />
+<par name="invert_up_down_center" value="60" />
+<par_bool name="enabled" value="no" />
+<par name="global_fine_detune" value="64" />
+<par name="a_note" value="69" />
+<par_real name="a_freq" value="440" exact_value="0x43DC0000" />
+</MICROTONAL>
+<automation>
+<mgr-info nslots="16" nautomations="4" ncontrol="8" />
+</automation>
+<PART id="0">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="1">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="2">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="3">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="4">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="5">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="6">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="7">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="8">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="9">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="10">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="11">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="12">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="13">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="14">
+<par_bool name="enabled" value="no" />
+</PART>
+<PART id="15">
+<par_bool name="enabled" value="no" />
+</PART>
+<SYSTEM_EFFECTS>
+<SYSTEM_EFFECT id="0">
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+<VOLUME id="0">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="1">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="2">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="3">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="4">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="5">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="6">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="7">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="8">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="9">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="10">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="11">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="12">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="13">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="14">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="15">
+<par name="vol" value="0" />
+</VOLUME>
+<SENDTO id="1">
+<par name="send_vol" value="0" />
+</SENDTO>
+<SENDTO id="2">
+<par name="send_vol" value="0" />
+</SENDTO>
+<SENDTO id="3">
+<par name="send_vol" value="0" />
+</SENDTO>
+</SYSTEM_EFFECT>
+<SYSTEM_EFFECT id="1">
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+<VOLUME id="0">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="1">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="2">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="3">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="4">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="5">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="6">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="7">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="8">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="9">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="10">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="11">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="12">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="13">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="14">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="15">
+<par name="vol" value="0" />
+</VOLUME>
+<SENDTO id="2">
+<par name="send_vol" value="0" />
+</SENDTO>
+<SENDTO id="3">
+<par name="send_vol" value="0" />
+</SENDTO>
+</SYSTEM_EFFECT>
+<SYSTEM_EFFECT id="2">
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+<VOLUME id="0">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="1">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="2">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="3">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="4">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="5">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="6">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="7">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="8">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="9">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="10">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="11">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="12">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="13">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="14">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="15">
+<par name="vol" value="0" />
+</VOLUME>
+<SENDTO id="3">
+<par name="send_vol" value="0" />
+</SENDTO>
+</SYSTEM_EFFECT>
+<SYSTEM_EFFECT id="3">
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+<VOLUME id="0">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="1">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="2">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="3">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="4">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="5">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="6">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="7">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="8">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="9">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="10">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="11">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="12">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="13">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="14">
+<par name="vol" value="0" />
+</VOLUME>
+<VOLUME id="15">
+<par name="vol" value="0" />
+</VOLUME>
+</SYSTEM_EFFECT>
+</SYSTEM_EFFECTS>
+<INSERTION_EFFECTS>
+<INSERTION_EFFECT id="0">
+<par name="part" value="-1" />
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+</INSERTION_EFFECT>
+<INSERTION_EFFECT id="1">
+<par name="part" value="-1" />
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+</INSERTION_EFFECT>
+<INSERTION_EFFECT id="2">
+<par name="part" value="-1" />
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+</INSERTION_EFFECT>
+<INSERTION_EFFECT id="3">
+<par name="part" value="-1" />
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+</INSERTION_EFFECT>
+<INSERTION_EFFECT id="4">
+<par name="part" value="-1" />
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+</INSERTION_EFFECT>
+<INSERTION_EFFECT id="5">
+<par name="part" value="-1" />
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+</INSERTION_EFFECT>
+<INSERTION_EFFECT id="6">
+<par name="part" value="-1" />
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+</INSERTION_EFFECT>
+<INSERTION_EFFECT id="7">
+<par name="part" value="-1" />
+<EFFECT>
+<par name="type" value="0" />
+</EFFECT>
+</INSERTION_EFFECT>
+</INSERTION_EFFECTS>
+</MASTER>
+</ZynAddSubFX-data>
+"""
+	] .
+
