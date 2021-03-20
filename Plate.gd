@@ -25,6 +25,9 @@ func shuffle():
 
 func next():
 	$AnimationPlayer.play("shuffle")
+	
+func hide_anim():
+	$AnimationPlayer.play("hide")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

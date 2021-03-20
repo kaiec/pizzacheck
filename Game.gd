@@ -19,7 +19,17 @@ func _on_close_settings_pressed():
 func _on_volume_value_changed(value):
 	$AudioStreamPlayer.volume_db = value
 
+func _ready():
+	$FinishedLabel.hide()
+	$Timer.start()
 
 func _on_Controller_chosen(item):
 	if item==$plate.missing:
+		$Score.add(1)
 		$plate.next()
+
+
+func _on_Timer_timeout():
+	$Controller.hide()
+	$FinishedLabel.show()
+	$plate.hide_anim()
