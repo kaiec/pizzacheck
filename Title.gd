@@ -21,9 +21,9 @@ func _on_1player_pressed():
 
 
 func _on_credits_pressed():
-		get_tree().change_scene("res://Credits.tscn")
+	get_tree().change_scene("res://Credits.tscn")
 
 
 
 func _on_2player_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://Game2.tscn")

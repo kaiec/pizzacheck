@@ -85,9 +85,9 @@
        x="102.9561"
        y="183.32057"
        ry="1.8980232"
-       inkscape:export-xdpi="94.849037"
-       inkscape:export-ydpi="94.849037"
-       inkscape:export-filename="./button.png" />
+       inkscape:export-xdpi="189.58"
+       inkscape:export-ydpi="189.58"
+       inkscape:export-filename="./button-wide-normal.png" />
     <rect
        style="fill:#f2f0e5;fill-opacity:1;stroke:#c2d368;stroke-width:0.965901;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1;stop-color:#000000"
        id="rect833-3-6"
@@ -96,8 +96,8 @@
        x="102.3513"
        y="169.47578"
        ry="1.8980232"
-       inkscape:export-xdpi="94.849037"
-       inkscape:export-ydpi="94.849037"
-       inkscape:export-filename="./button.png" />
+       inkscape:export-xdpi="189.58"
+       inkscape:export-ydpi="189.58"
+       inkscape:export-filename="./button-wide-hover.png" />
   </g>
 </svg>

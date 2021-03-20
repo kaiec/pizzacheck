@@ -22,7 +22,7 @@ func _on_volume_value_changed(value):
 func _ready():
 	$FinishedLabel.hide()
 	$backButton.hide()
-	$Timer.start(10)
+	$Timer.start(60)
 
 func _on_Controller_chosen(item):
 	if item==$plate.missing:

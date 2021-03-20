@@ -1,0 +1,301 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://assets/images/background.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/title.png" type="Texture" id=2]
+[ext_resource path="res://assets/santalucia/santa-lucia/export/santa-lucia.ogg" type="AudioStream" id=3]
+[ext_resource path="res://assets/images/unchecked.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/checked.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/notes.png" type="Texture" id=6]
+[ext_resource path="res://assets/images/close.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/settings.png" type="Texture" id=8]
+[ext_resource path="res://Plate.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Game2.gd" type="Script" id=10]
+[ext_resource path="res://Score.gd" type="Script" id=11]
+[ext_resource path="res://Controller.tscn" type="PackedScene" id=12]
+[ext_resource path="res://headline_font.tres" type="DynamicFont" id=13]
+[ext_resource path="res://Timer.gd" type="Script" id=14]
+[ext_resource path="res://button_key_font.tres" type="DynamicFont" id=15]
+[ext_resource path="res://assets/images/button-wide-normal.png" type="Texture" id=16]
+[ext_resource path="res://assets/images/button-wide-hover.png" type="Texture" id=17]
+[ext_resource path="res://text_font.tres" type="DynamicFont" id=18]
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 298.618 ]
+}
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 662.162, 294.441 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="plate" parent="." instance=ExtResource( 9 )]
+position = Vector2( 668.138, 354.216 )
+
+[node name="Controller" parent="." instance=ExtResource( 12 )]
+margin_left = 1202.27
+margin_top = 684.436
+margin_right = 1872.27
+margin_bottom = 784.436
+rect_rotation = -89.9999
+
+[node name="Controller2" parent="." instance=ExtResource( 12 )]
+margin_left = 78.7023
+margin_top = 14.983
+margin_right = 748.702
+margin_bottom = 114.983
+rect_rotation = 89.9999
+
+[node name="title" type="Sprite" parent="."]
+position = Vector2( 658.039, 69.0304 )
+scale = Vector2( 0.536423, 0.536423 )
+texture = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -20.0
+autoplay = true
+
+[node name="settings" type="TextureButton" parent="."]
+modulate = Color( 0.37, 0.37, 0.37, 1 )
+margin_left = 638.907
+margin_top = 633.784
+margin_right = 702.907
+margin_bottom = 697.784
+texture_normal = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="settings_dialog" type="Node2D" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="settings_dialog"]
+margin_left = 258.747
+margin_top = 123.624
+margin_right = 1058.75
+margin_bottom = 573.624
+color = Color( 0, 0, 0, 0.564706 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="close_settings" type="TextureButton" parent="settings_dialog/ColorRect"]
+modulate = Color( 0.670588, 0.670588, 0.670588, 1 )
+margin_left = 727.139
+margin_top = 11.2238
+margin_right = 791.139
+margin_bottom = 75.2238
+texture_normal = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="settings_dialog/ColorRect"]
+modulate = Color( 0.670588, 0.670588, 0.670588, 1 )
+
+[node name="notes" type="Sprite" parent="settings_dialog/ColorRect/Node2D"]
+position = Vector2( 152.591, 139.994 )
+texture = ExtResource( 6 )
+
+[node name="volume" type="HSlider" parent="settings_dialog/ColorRect/Node2D"]
+margin_left = 210.0
+margin_top = 104.182
+margin_right = 341.0
+margin_bottom = 134.182
+rect_scale = Vector2( 2, 2 )
+min_value = -80.0
+max_value = 0.0
+value = -20.0
+tick_count = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="music_button" type="TextureButton" parent="settings_dialog/ColorRect/Node2D"]
+margin_left = 497.455
+margin_top = 119.451
+margin_right = 537.455
+margin_bottom = 159.451
+toggle_mode = true
+pressed = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Node2D" parent="."]
+position = Vector2( 684.367, 669.905 )
+rotation = -1.57079
+script = ExtResource( 11 )
+
+[node name="ColorRect" type="ColorRect" parent="Score"]
+margin_left = 250.0
+margin_top = 280.0
+margin_right = 290.0
+margin_bottom = 320.0
+rect_scale = Vector2( 3.61345, 2.38623 )
+color = Color( 0.270588, 0.266667, 0.309804, 0.603922 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Score"]
+margin_left = 275.0
+margin_top = 300.0
+margin_right = 365.0
+margin_bottom = 359.0
+custom_fonts/font = ExtResource( 13 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreLabel" type="Label" parent="Score"]
+margin_left = 270.0
+margin_top = 250.0
+margin_right = 360.0
+margin_bottom = 278.0
+custom_fonts/font = ExtResource( 15 )
+text = "Score"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score2" type="Node2D" parent="."]
+position = Vector2( 643.919, 24.837 )
+rotation = 1.57079
+script = ExtResource( 11 )
+
+[node name="ColorRect" type="ColorRect" parent="Score2"]
+margin_left = 250.0
+margin_top = 280.0
+margin_right = 290.0
+margin_bottom = 320.0
+rect_scale = Vector2( 3.61345, 2.38623 )
+color = Color( 0.270588, 0.266667, 0.309804, 0.603922 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Score2"]
+margin_left = 275.0
+margin_top = 300.0
+margin_right = 365.0
+margin_bottom = 359.0
+custom_fonts/font = ExtResource( 13 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreLabel" type="Label" parent="Score2"]
+margin_left = 270.0
+margin_top = 250.0
+margin_right = 360.0
+margin_bottom = 278.0
+custom_fonts/font = ExtResource( 15 )
+text = "Score"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Node2D" parent="."]
+visible = false
+position = Vector2( 685.367, 78.983 )
+script = ExtResource( 14 )
+
+[node name="ColorRect" type="ColorRect" parent="Timer"]
+margin_left = 250.0
+margin_top = 280.0
+margin_right = 290.0
+margin_bottom = 320.0
+rect_scale = Vector2( 3.61345, 2.38623 )
+color = Color( 0.270588, 0.266667, 0.309804, 0.603922 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Timer"]
+margin_left = 275.0
+margin_top = 300.0
+margin_right = 365.0
+margin_bottom = 359.0
+custom_fonts/font = ExtResource( 13 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimerLabel" type="Label" parent="Timer"]
+margin_left = 270.0
+margin_top = 250.0
+margin_right = 360.0
+margin_bottom = 278.0
+custom_fonts/font = ExtResource( 15 )
+text = "Timer"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="Timer"]
+
+[node name="FinishedLabel2" type="Label" parent="."]
+margin_left = 199.6
+margin_top = 228.618
+margin_right = 1478.6
+margin_bottom = 287.618
+rect_rotation = 89.9999
+custom_fonts/font = ExtResource( 13 )
+text = "Winner!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FinishedLabel1" type="Label" parent="."]
+margin_left = 1099.81
+margin_top = 484.433
+margin_right = 2378.81
+margin_bottom = 543.433
+rect_rotation = 270.0
+custom_fonts/font = ExtResource( 13 )
+text = "Winner!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="backButton" type="TextureButton" parent="."]
+margin_left = 536.541
+margin_top = 287.319
+margin_right = 671.541
+margin_bottom = 327.319
+texture_normal = ExtResource( 16 )
+texture_hover = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="backButton"]
+margin_left = 43.8597
+margin_top = 23.0488
+margin_right = 225.86
+margin_bottom = 51.0488
+custom_fonts/font = ExtResource( 18 )
+custom_colors/font_color = Color( 0.270588, 0.266667, 0.309804, 1 )
+text = "Play again?"
+[connection signal="chosen" from="Controller" to="." method="_on_Controller_chosen"]
+[connection signal="chosen" from="Controller2" to="." method="_on_Controller2_chosen"]
+[connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="settings_dialog/ColorRect/close_settings" to="." method="_on_close_settings_pressed"]
+[connection signal="value_changed" from="settings_dialog/ColorRect/Node2D/volume" to="." method="_on_volume_value_changed"]
+[connection signal="toggled" from="settings_dialog/ColorRect/Node2D/music_button" to="." method="_on_music_button_toggled"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Timer/Timer" to="Timer" method="_on_Timer_timeout"]
+[connection signal="pressed" from="backButton" to="." method="_on_backButton_pressed"]
