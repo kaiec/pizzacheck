@@ -1,0 +1,63 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://headline_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/images/background.png" type="Texture" id=2]
+[ext_resource path="res://text_font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/images/tomato.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/title.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/oregano.svg" type="Texture" id=6]
+
+[node name="Credits" type="Node2D"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 644.294, 300.163 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 75.5077
+margin_top = 156.363
+margin_right = 319.508
+margin_bottom = 215.363
+custom_fonts/font = ExtResource( 1 )
+text = "Credits"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 77.5077
+margin_top = 269.616
+margin_right = 1127.51
+margin_bottom = 576.616
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.270588, 0.266667, 0.309804, 1 )
+text = "Programmer: Kai Eckert (Godot Engine).
+
+Graphics: Kai Eckert (Inkscape).
+
+Music: Santa Lucia, produced by Kai Eckert (ZynAddSubFX, Ardour),
+based on an arrangement by P. De Walt (8notes.com).
+
+Font: Mont Heavy by Fontfabric.
+
+Source Code available under MIT License."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="oregano" type="Sprite" parent="."]
+position = Vector2( 1195.22, 556.597 )
+texture = ExtResource( 6 )
+
+[node name="tomato" type="Sprite" parent="."]
+position = Vector2( 1041.64, 174.382 )
+texture = ExtResource( 4 )
+
+[node name="title" type="Sprite" parent="."]
+position = Vector2( 1075.49, 109.511 )
+rotation = 0.523598
+scale = Vector2( 0.549263, 0.549263 )
+texture = ExtResource( 5 )

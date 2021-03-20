@@ -28,6 +28,7 @@ func next():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	randomize()
 	$vegetables.show()
 	shuffle()
 
