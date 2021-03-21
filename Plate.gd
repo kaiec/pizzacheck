@@ -24,6 +24,7 @@ func shuffle():
 		v.show()
 
 func next():
+	SoundManager.play("slide")
 	$AnimationPlayer.play("shuffle")
 	
 func hide_anim():

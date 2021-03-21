@@ -1,5 +1,8 @@
 extends Node2D
 
+var fx_active = true
+var fx_volume = -20
+
 func play_bg():
 	if not $AudioStreamPlayer.playing:
 		$AudioStreamPlayer.play()
@@ -21,3 +24,9 @@ func is_bg_playing():
 
 func _ready():
 	$AudioStreamPlayer.volume_db = -20
+
+func play(fx):
+	if fx_active:
+		var audioplayer = get_node(fx) as AudioStreamPlayer
+		audioplayer.volume_db = fx_volume
+		audioplayer.play()

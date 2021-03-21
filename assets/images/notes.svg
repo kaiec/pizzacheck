@@ -23,17 +23,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.12368827"
-     inkscape:cx="-468.72424"
-     inkscape:cy="868.50959"
+     inkscape:zoom="0.69784616"
+     inkscape:cx="562.13657"
+     inkscape:cy="1042.108"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1911"
-     inkscape:window-height="701"
+     inkscape:window-height="700"
      inkscape:window-x="3841"
-     inkscape:window-y="743"
+     inkscape:window-y="1452"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata1536">
@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,10 +52,10 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#e53939;fill-opacity:0.99588609;stroke:none;stroke-width:0.238654;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1;stop-color:#000000"
+       style="fill:#e53939;fill-opacity:0.995886;stroke:none;stroke-width:0.327104;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1;stop-color:#000000"
        id="rect2132"
-       width="235.24973"
-       height="149.20844"
+       width="368.16168"
+       height="179.10912"
        x="-49.933575"
        y="-31.695517" />
     <g
@@ -142,5 +142,32 @@
          inkscape:transform-center-x="-31.249331"
          inkscape:transform-center-y="-12.65685" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:95.1634px;line-height:1.25;font-family:Mont;-inkscape-font-specification:'Mont Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.49564"
+       x="135.99933"
+       y="144.68724"
+       id="text1522"
+       transform="matrix(0.81418276,-0.40486474,0.02221768,1.2171774,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan1520"
+         x="135.99933"
+         y="144.68724"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:95.1634px;font-family:'Noto Looped Lao';-inkscape-font-specification:'Noto Looped Lao Bold';fill:#ffffff;stroke-width:0.49564">FX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:95.1634px;line-height:1.25;font-family:Mont;-inkscape-font-specification:'Mont Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.49564"
+       x="41.535362"
+       y="299.72653"
+       id="text1526"
+       transform="matrix(0.81418276,-0.40486474,0.02221768,1.2171774,0,0)"
+       inkscape:export-filename="./fx.png"
+       inkscape:export-xdpi="17.790001"
+       inkscape:export-ydpi="17.790001"><tspan
+         sodipodi:role="line"
+         id="tspan1524"
+         x="41.535362"
+         y="299.72653"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:95.1634px;font-family:'Noto Looped Lao';-inkscape-font-specification:'Noto Looped Lao Bold';fill:#ffffff;stroke-width:0.49564">FX</tspan></text>
   </g>
 </svg>
