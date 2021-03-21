@@ -41,13 +41,17 @@ func check_win():
 func _on_Controller_chosen(item):
 	if item==$plate.missing:
 		$Score.add(1)
+		SoundManager.play("juhi")
 	else:
+		SoundManager.play("moep")
 		$Score2.add(1)
 	check_win()
 		
 func _on_Controller2_chosen(item):
 	if item==$plate.missing:
+		SoundManager.play("juhi")
 		$Score2.add(1)
 	else:
+		SoundManager.play("moep")
 		$Score.add(1)
 	check_win()

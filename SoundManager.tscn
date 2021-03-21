@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/santalucia/santa-lucia/export/santa-lucia.ogg" type="AudioStream" id=1]
 [ext_resource path="res://SoundManager.gd" type="Script" id=2]
 [ext_resource path="res://assets/effects/slide.ogg" type="AudioStream" id=3]
+[ext_resource path="res://assets/effects/juhi.ogg" type="AudioStream" id=4]
+[ext_resource path="res://assets/effects/moep.ogg" type="AudioStream" id=5]
 
 [node name="SoundManager" type="Node2D"]
 script = ExtResource( 2 )
@@ -13,3 +15,9 @@ autoplay = true
 
 [node name="slide" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+
+[node name="juhi" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="moep" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
