@@ -1,13 +1,8 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/images/background.png" type="Texture" id=1]
 [ext_resource path="res://assets/images/title.png" type="Texture" id=2]
-[ext_resource path="res://assets/santalucia/santa-lucia/export/santa-lucia.ogg" type="AudioStream" id=3]
-[ext_resource path="res://assets/images/unchecked.png" type="Texture" id=4]
-[ext_resource path="res://assets/images/checked.png" type="Texture" id=5]
-[ext_resource path="res://assets/images/notes.png" type="Texture" id=6]
-[ext_resource path="res://assets/images/close.png" type="Texture" id=7]
-[ext_resource path="res://assets/images/settings.png" type="Texture" id=8]
+[ext_resource path="res://Settings.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Plate.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Game.gd" type="Script" id=10]
 [ext_resource path="res://Score.gd" type="Script" id=11]
@@ -42,80 +37,6 @@ margin_bottom = 738.135
 position = Vector2( 658.039, 69.0304 )
 scale = Vector2( 0.536423, 0.536423 )
 texture = ExtResource( 2 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
-volume_db = -20.0
-autoplay = true
-
-[node name="settings" type="TextureButton" parent="."]
-modulate = Color( 0.37, 0.37, 0.37, 1 )
-margin_left = 1202.27
-margin_top = 14.983
-margin_right = 1266.27
-margin_bottom = 78.983
-texture_normal = ExtResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="settings_dialog" type="Node2D" parent="."]
-visible = false
-
-[node name="ColorRect" type="ColorRect" parent="settings_dialog"]
-margin_left = 258.747
-margin_top = 123.624
-margin_right = 1058.75
-margin_bottom = 573.624
-color = Color( 0, 0, 0, 0.564706 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="close_settings" type="TextureButton" parent="settings_dialog/ColorRect"]
-modulate = Color( 0.670588, 0.670588, 0.670588, 1 )
-margin_left = 727.139
-margin_top = 11.2238
-margin_right = 791.139
-margin_bottom = 75.2238
-texture_normal = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Node2D" type="Node2D" parent="settings_dialog/ColorRect"]
-modulate = Color( 0.670588, 0.670588, 0.670588, 1 )
-
-[node name="notes" type="Sprite" parent="settings_dialog/ColorRect/Node2D"]
-position = Vector2( 152.591, 139.994 )
-texture = ExtResource( 6 )
-
-[node name="volume" type="HSlider" parent="settings_dialog/ColorRect/Node2D"]
-margin_left = 210.0
-margin_top = 104.182
-margin_right = 341.0
-margin_bottom = 134.182
-rect_scale = Vector2( 2, 2 )
-min_value = -80.0
-max_value = 0.0
-value = -20.0
-tick_count = 10
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="music_button" type="TextureButton" parent="settings_dialog/ColorRect/Node2D"]
-margin_left = 497.455
-margin_top = 119.451
-margin_right = 537.455
-margin_bottom = 159.451
-toggle_mode = true
-pressed = true
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Score" type="Node2D" parent="."]
 script = ExtResource( 11 )
@@ -205,6 +126,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Settings" parent="." instance=ExtResource( 4 )]
+
 [node name="backButton" type="TextureButton" parent="."]
 margin_left = 536.541
 margin_top = 287.319
@@ -225,10 +148,6 @@ custom_fonts/font = ExtResource( 18 )
 custom_colors/font_color = Color( 0.270588, 0.266667, 0.309804, 1 )
 text = "Play again?"
 [connection signal="chosen" from="Controller" to="." method="_on_Controller_chosen"]
-[connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="settings_dialog/ColorRect/close_settings" to="." method="_on_close_settings_pressed"]
-[connection signal="value_changed" from="settings_dialog/ColorRect/Node2D/volume" to="." method="_on_volume_value_changed"]
-[connection signal="toggled" from="settings_dialog/ColorRect/Node2D/music_button" to="." method="_on_music_button_toggled"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer/Timer" to="Timer" method="_on_Timer_timeout"]
 [connection signal="pressed" from="backButton" to="." method="_on_backButton_pressed"]
