@@ -34,9 +34,9 @@
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1911"
-     inkscape:window-height="701"
+     inkscape:window-height="1055"
      inkscape:window-x="3841"
-     inkscape:window-y="743"
+     inkscape:window-y="1097"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -99,5 +99,27 @@
        inkscape:export-xdpi="189.58"
        inkscape:export-ydpi="189.58"
        inkscape:export-filename="./button-wide-hover.png" />
+    <rect
+       style="fill:#f2f0e5;fill-opacity:1;stroke:#8ab060;stroke-width:0.791148;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1;stop-color:#000000"
+       id="rect842"
+       width="18.943501"
+       height="10.299259"
+       x="66.605331"
+       y="198.41106"
+       ry="2.3666551"
+       inkscape:export-xdpi="189.58"
+       inkscape:export-ydpi="189.58"
+       inkscape:export-filename="./frame.png" />
+    <rect
+       style="fill:#f2f0e5;fill-opacity:1;stroke:#c2d368;stroke-width:0.791148;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1;stop-color:#000000"
+       id="rect844"
+       width="18.943501"
+       height="10.299259"
+       x="91.437531"
+       y="198.51784"
+       ry="2.3666551"
+       inkscape:export-xdpi="189.58"
+       inkscape:export-ydpi="189.58"
+       inkscape:export-filename="./button-wide-normal.png" />
   </g>
 </svg>
