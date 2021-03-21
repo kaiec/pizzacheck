@@ -5,6 +5,7 @@ onready var outline_material = preload("res://outline_material.tres")
 
 var values = ["oregano", "peperoni", "mozarella", "corn", "tomato", "olives", "broccoli", "champignon"]
 var missing = "oregano"
+var ready = true
 	
 	
 func shuffle():
@@ -24,7 +25,7 @@ func shuffle():
 		v.show()
 
 func next():
-	missing = ""
+	ready == false
 	SoundManager.play("slide")
 	$AnimationPlayer.play("shuffle")
 	
@@ -37,3 +38,8 @@ func _ready():
 	$vegetables.show()
 	shuffle()
 
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	if anim_name=="shuffle":
+		ready = true

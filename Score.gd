@@ -13,6 +13,8 @@ func _ready():
 
 func add(v):
 	score += v
+	if score < 0:
+		score = 0
 	$Label.text = str(score)
 	
 

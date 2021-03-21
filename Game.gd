@@ -9,9 +9,16 @@ func _ready():
 	$Timer.start(60)
 
 func _on_Controller_chosen(item):
+	if not $plate.ready:
+		return
 	if item==$plate.missing:
+		SoundManager.play("juhi")
 		$Score.add(1)
 		$plate.next()
+	else:
+		SoundManager.play("moep")
+		$Score.add(-1)
+
 
 
 func _on_Timer_timeout():
