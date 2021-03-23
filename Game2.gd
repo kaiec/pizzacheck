@@ -50,6 +50,8 @@ func _on_Controller_chosen(item):
 	check_win()
 		
 func _on_Controller2_chosen(item):
+	if not $plate.ready:
+		return
 	if item==$plate.missing:
 		SoundManager.play("juhi")
 		$Score2.add(1)
