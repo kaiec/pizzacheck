@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vegetables-done.png-a4cb3ae2528063a7d2b9c645b35a3c2f.stex"
+path="res://.import/pizza-ingredients.svg-791fcbd450e74f33d2e9b148070a7c22.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/vegetables-done.png"
-dest_files=[ "res://.import/vegetables-done.png-a4cb3ae2528063a7d2b9c645b35a3c2f.stex" ]
+source_file="res://assets/images/pizza-ingredients.svg"
+dest_files=[ "res://.import/pizza-ingredients.svg-791fcbd450e74f33d2e9b148070a7c22.stex" ]
 
 [params]
 

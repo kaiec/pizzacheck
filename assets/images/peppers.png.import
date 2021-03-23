@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/olives.svg-fb4bc5a24ce5a99662f9d5bb6516dbda.stex"
+path="res://.import/peppers.png-31f16bd3b1a554ca52edc4b1cf0f0db8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/olives.svg"
-dest_files=[ "res://.import/olives.svg-fb4bc5a24ce5a99662f9d5bb6516dbda.stex" ]
+source_file="res://assets/images/peppers.png"
+dest_files=[ "res://.import/peppers.png-31f16bd3b1a554ca52edc4b1cf0f0db8.stex" ]
 
 [params]
 

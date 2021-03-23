@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mozarella.svg-c9217832634f331ce3bfcec5180ea67d.stex"
+path="res://.import/mozzarella.png-897ece75e1e44e83052c3c839a0bfcb3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/mozarella.svg"
-dest_files=[ "res://.import/mozarella.svg-c9217832634f331ce3bfcec5180ea67d.stex" ]
+source_file="res://assets/images/mozzarella.png"
+dest_files=[ "res://.import/mozzarella.png-897ece75e1e44e83052c3c839a0bfcb3.stex" ]
 
 [params]
 
